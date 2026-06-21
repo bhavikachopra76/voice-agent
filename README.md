@@ -21,8 +21,8 @@ Right now, running **[query.py](file:///c:/Users/Bhavika/Downloads/voice%20agent
 ### Step 1: Clone the Repository
 Open your terminal (PowerShell, Command Prompt, or bash) and run:
 ```bash
-git clone https://github.com/bhavikachopra76/voice-agent-.git
-cd voice-agent-
+git clone https://github.com/bhavikachopra76/voice-agent.git
+cd voice-agent
 ```
 
 ### Step 2: Install Python & Package Manager (uv)
