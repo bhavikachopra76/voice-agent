@@ -126,7 +126,14 @@ create table document_chunks (
     embedding vector(384) -- 384 dimensions for the BAAI/bge-small-en-v1.5 model
 );
 
--- 3. Create the similarity match function
+-- 3. RLS policy
+create policy "Allow all access to authenticated backend" 
+on document_chunks 
+for all 
+using (true) 
+with check (true);
+
+-- 4. Create the similarity match function
 create or replace function match_documents (
   query_embedding vector(384),
   match_threshold float,
